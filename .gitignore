@@ -20,12 +20,17 @@ htmlcov/
 *.log
 
 # Raw and intermediate data
+# Raw data: exclude large datasets, retain provenance
 /data/raw/*
 !/data/raw/.gitkeep
+!/data/raw/manifest.json
 
+# Interim data: exclude Parquet, retain conversion report
 /data/interim/*
 !/data/interim/.gitkeep
+!/data/interim/conversion_report.json
 
+# Processed data
 /data/processed/*
 !/data/processed/.gitkeep
 

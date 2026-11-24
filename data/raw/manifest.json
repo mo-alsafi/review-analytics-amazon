@@ -1,0 +1,25 @@
+{
+    "dataset": "Amazon Reviews 2023",
+    "category": "Appliances",
+    "source_url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/Appliances.jsonl.gz",
+    "downloaded_at_utc": "2026-11-13T12:21:59Z",
+    "filename": "Appliances.jsonl.gz",
+    "format": "JSONL.GZ",
+    "file_size_bytes": 270209794,
+    "file_size_mib": 257.69,
+    "sha256": "150f209befceaa6f837abc997065b2d251034bbbda19bebc4ad56dac779730c2",
+    "review_row_count": 2128605,
+    "first_record_keys": [
+        "asin",
+        "helpful_vote",
+        "images",
+        "parent_asin",
+        "rating",
+        "text",
+        "timestamp",
+        "title",
+        "user_id",
+        "verified_purchase"
+    ],
+    "remote_last_modified": "Thu, 16 Jan 2025 22:41:53 GMT"
+}

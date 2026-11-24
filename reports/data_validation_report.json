@@ -1,0 +1,52 @@
+{
+    "dataset": "Amazon Reviews 2023",
+    "category": "Appliances",
+    "validated_at_utc": "2026-11-15T19:21:34.259244+00:00",
+    "file": "appliances_reviews.parquet",
+    "file_size_bytes": 217074840,
+    "sha256": "99a08dd243ca5e44770c219a1332d8d9584dfbc04ee603b3978a3f996b6d6f39",
+    "schema": {
+        "rating": "DOUBLE",
+        "title": "VARCHAR",
+        "text": "VARCHAR",
+        "images": "STRUCT(small_image_url VARCHAR, medium_image_url VARCHAR, large_image_url VARCHAR, attachment_type VARCHAR)[]",
+        "asin": "VARCHAR",
+        "parent_asin": "VARCHAR",
+        "user_id": "VARCHAR",
+        "timestamp": "BIGINT",
+        "helpful_vote": "BIGINT",
+        "verified_purchase": "BOOLEAN"
+    },
+    "metrics": {
+        "total_rows": 2128605,
+        "invalid_rating_rows": 0,
+        "minimum_rating": 1.0,
+        "maximum_rating": 5.0,
+        "null_timestamp_rows": 0,
+        "minimum_timestamp": 972311843000,
+        "maximum_timestamp": 1694536157016,
+        "null_verified_purchase_rows": 0,
+        "null_title_rows": 0,
+        "blank_title_rows": 0,
+        "null_text_rows": 0,
+        "blank_text_rows": 2065,
+        "null_asin_rows": 0,
+        "null_parent_asin_rows": 0,
+        "null_user_id_rows": 0,
+        "null_helpful_vote_rows": 0,
+        "negative_helpful_vote_rows": 0,
+        "null_images_rows": 0,
+        "total_image_attachments": 148536
+    },
+    "timestamp_range_utc": {
+        "minimum": "2000-10-23T14:37:23+00:00",
+        "maximum": "2023-09-12T16:29:17.016000+00:00"
+    },
+    "validation": {
+        "row_count_matches_manifest": true,
+        "ratings_within_1_to_5": true,
+        "schema_valid": true,
+        "parquet_checksum_valid": true
+    },
+    "failures": []
+}

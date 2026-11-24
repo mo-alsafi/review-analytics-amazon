@@ -1,0 +1,64 @@
+{
+    "source_file": "Appliances.jsonl.gz",
+    "output_file": "appliances_reviews.parquet",
+    "duckdb_version": "2.0.0",
+    "compression": "zstd",
+    "row_count": 2128605,
+    "column_count": 10,
+    "schema": [
+        {
+            "column": "rating",
+            "data_type": "DOUBLE"
+        },
+        {
+            "column": "title",
+            "data_type": "VARCHAR"
+        },
+        {
+            "column": "text",
+            "data_type": "VARCHAR"
+        },
+        {
+            "column": "images",
+            "data_type": "STRUCT(small_image_url VARCHAR, medium_image_url VARCHAR, large_image_url VARCHAR, attachment_type VARCHAR)[]"
+        },
+        {
+            "column": "asin",
+            "data_type": "VARCHAR"
+        },
+        {
+            "column": "parent_asin",
+            "data_type": "VARCHAR"
+        },
+        {
+            "column": "user_id",
+            "data_type": "VARCHAR"
+        },
+        {
+            "column": "timestamp",
+            "data_type": "BIGINT"
+        },
+        {
+            "column": "helpful_vote",
+            "data_type": "BIGINT"
+        },
+        {
+            "column": "verified_purchase",
+            "data_type": "BOOLEAN"
+        }
+    ],
+    "validation_metrics": {
+        "row_count": 2128605,
+        "minimum_rating": 1.0,
+        "maximum_rating": 5.0,
+        "title_characters": 47553980,
+        "review_characters": 360827182,
+        "image_attachments": 148536
+    },
+    "source_sha256": "150f209befceaa6f837abc997065b2d251034bbbda19bebc4ad56dac779730c2",
+    "output_sha256": "99a08dd243ca5e44770c219a1332d8d9584dfbc04ee603b3978a3f996b6d6f39",
+    "source_size_bytes": 270209794,
+    "output_size_bytes": 217074840,
+    "output_size_mib": 207.02,
+    "converted_at_utc": "2026-11-15T18:17:55.313772+00:00"
+}
